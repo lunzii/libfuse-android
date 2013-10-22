@@ -385,4 +385,4 @@ out:
 	return res;
 }
 
-FUSE_SYMVER(".symver fuse_unmount_compat22,fuse_unmount@FUSE_2.2");
+//FUSE_SYMVER(".symver fuse_unmount_compat22,fuse_unmount@FUSE_2.2");

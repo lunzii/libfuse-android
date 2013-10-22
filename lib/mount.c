@@ -119,6 +119,8 @@ static void mount_help(void)
 "\n");
 }
 
+#define FUSERMOUNT_DIR "/usr/bin"
+
 static void exec_fusermount(const char *argv[])
 {
 	execv(FUSERMOUNT_DIR "/" FUSERMOUNT_PROG, (char **) argv);
@@ -592,5 +594,5 @@ out:
 	return res;
 }
 
-FUSE_SYMVER(".symver fuse_mount_compat22,fuse_mount@FUSE_2.2");
-FUSE_SYMVER(".symver fuse_unmount_compat22,fuse_unmount@FUSE_2.2");
+//FUSE_SYMVER(".symver fuse_mount_compat22,fuse_mount@FUSE_2.2");
+//FUSE_SYMVER(".symver fuse_unmount_compat22,fuse_unmount@FUSE_2.2");

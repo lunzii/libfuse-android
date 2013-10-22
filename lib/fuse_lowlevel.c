@@ -1375,7 +1375,7 @@ const struct fuse_ctx *fuse_req_ctx_compat24(fuse_req_t req)
 {
 	return fuse_req_ctx(req);
 }
-FUSE_SYMVER(".symver fuse_req_ctx_compat24,fuse_req_ctx@FUSE_2.4");
+//FUSE_SYMVER(".symver fuse_req_ctx_compat24,fuse_req_ctx@FUSE_2.4");
 
 
 void fuse_req_interrupt_func(fuse_req_t req, fuse_interrupt_func_t func,
@@ -1855,9 +1855,9 @@ int fuse_sync_compat_args(struct fuse_args *args)
 	return 0;
 }
 
-FUSE_SYMVER(".symver fuse_reply_statfs_compat,fuse_reply_statfs@FUSE_2.4");
-FUSE_SYMVER(".symver fuse_reply_open_compat,fuse_reply_open@FUSE_2.4");
-FUSE_SYMVER(".symver fuse_lowlevel_new_compat,fuse_lowlevel_new@FUSE_2.4");
+//FUSE_SYMVER(".symver fuse_reply_statfs_compat,fuse_reply_statfs@FUSE_2.4");
+//FUSE_SYMVER(".symver fuse_reply_open_compat,fuse_reply_open@FUSE_2.4");
+//FUSE_SYMVER(".symver fuse_lowlevel_new_compat,fuse_lowlevel_new@FUSE_2.4");
 
 #else /* __FreeBSD__ */
 
@@ -1881,4 +1881,4 @@ struct fuse_session *fuse_lowlevel_new_compat25(struct fuse_args *args,
 					op_size, userdata);
 }
 
-FUSE_SYMVER(".symver fuse_lowlevel_new_compat25,fuse_lowlevel_new@FUSE_2.5");
+//FUSE_SYMVER(".symver fuse_lowlevel_new_compat25,fuse_lowlevel_new@FUSE_2.5");
